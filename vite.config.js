@@ -14,6 +14,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      pages: '/src/pages',
       components: '/src/components',
       styles: '/src/assets/styles',
       api: '/src/api'
