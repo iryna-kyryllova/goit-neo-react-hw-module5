@@ -1,4 +1,8 @@
-.loader {
+.sectionLoader {
+  margin-top: 40px;
+}
+
+.pageLoader {
   position: fixed;
   top: 0;
   left: 0;

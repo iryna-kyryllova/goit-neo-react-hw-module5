@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import MovieList from 'components/MovieList/MovieList'
+import Loader from 'components/Loader/Loader'
 import ErrorMessage from 'components/ErrorMessage/ErrorMessage'
 import { getTrendingMovies } from 'api/movies-api'
 
@@ -11,6 +12,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
+        setIsError(false)
         setIsLoading(true)
         const data = await getTrendingMovies()
         setMovies(data.results)
@@ -28,9 +30,9 @@ const HomePage = () => {
   return (
     <div>
       <h1>Trending today</h1>
+      {isLoading && <Loader style='section' />}
       {isError && <ErrorMessage />}
-      {isLoading && <span>Loading...</span>}
-      {movies && <MovieList data={movies} />}
+      {movies.length > 0 && <MovieList data={movies} />}
     </div>
   )
 }
