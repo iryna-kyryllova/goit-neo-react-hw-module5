@@ -10,7 +10,7 @@ body {
   margin: 0;
   background-color: var(--white);
   font-family: var(--font-primary);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   color: var(--black);
   overflow-x: hidden;
@@ -48,6 +48,10 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a.active {
+  color: var(--light-blue);
 }
 
 ul,
@@ -122,5 +126,5 @@ button {
 
 .app-container {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }

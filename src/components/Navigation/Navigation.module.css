@@ -1,0 +1,10 @@
+.nav {
+  padding: 15px 0;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}

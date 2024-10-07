@@ -17,7 +17,8 @@ export default defineConfig({
       pages: '/src/pages',
       components: '/src/components',
       styles: '/src/assets/styles',
-      api: '/src/api'
+      api: '/src/api',
+      utils: '/src/utils'
     }
   }
 })

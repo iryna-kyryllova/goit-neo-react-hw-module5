@@ -1,5 +1,12 @@
+import MovieList from 'components/MovieList/MovieList'
+
 const MoviesPage = () => {
-  return <div>MoviesPage</div>
+  return (
+    <div>
+      <h1>Movies page</h1>
+      <MovieList data={[]} />
+    </div>
+  )
 }
 
 export default MoviesPage

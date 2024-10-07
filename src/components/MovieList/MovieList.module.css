@@ -1,0 +1,50 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 40px 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+
+    .title {
+      color: var(--light-blue);
+    }
+  }
+}
+
+.info {
+  flex: 1;
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 0.6667;
+  object-fit: cover;
+}
+
+.title {
+  margin-bottom: 3px;
+  font-size: 21px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.3s ease;
+}
+
+.date {
+  font-size: 16px;
+}
