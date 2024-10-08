@@ -30,7 +30,7 @@
   padding: 15px;
 }
 
-img {
+.img {
   width: 100%;
   aspect-ratio: 0.6667;
   object-fit: cover;

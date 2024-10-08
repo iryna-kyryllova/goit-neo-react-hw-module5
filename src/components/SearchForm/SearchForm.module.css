@@ -8,20 +8,6 @@
   max-width: 350px;
 }
 
-.btn {
-  padding: 6px 15px;
-  border: none;
-  background-color: var(--accent);
-  color: var(--white);
-  transition: color 0.3s ease;
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent);
-    color: var(--light-blue);
-  }
-}
-
 .icon {
   width: 20px;
   height: 100%;

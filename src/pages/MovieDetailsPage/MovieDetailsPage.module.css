@@ -1,0 +1,113 @@
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent);
+  line-height: 1;
+  color: var(--white);
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--light-blue);
+  }
+}
+
+.holder {
+  margin-top: 40px;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  margin-bottom: 0;
+  font-size: 34px;
+}
+
+.genres,
+.runtime {
+  position: relative;
+  margin-left: 5px;
+
+  &::before {
+    content: '•';
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.genres {
+  display: inline-block;
+}
+
+.genre {
+  position: relative;
+  display: inline-block;
+
+  &:last-child::after {
+    content: '';
+    margin-right: 0;
+  }
+
+  &::after {
+    content: ',';
+    display: inline-block;
+    margin-right: 4px;
+  }
+}
+
+.rating {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.ratingIcon {
+  color: var(--yellow);
+}
+
+.ratingNumber {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: -7px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.tag {
+  margin: 10px 0 0;
+}
+
+.overview {
+  margin-top: 15px;
+}
+
+.overviewTitle {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.additional {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.additionalItem {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
