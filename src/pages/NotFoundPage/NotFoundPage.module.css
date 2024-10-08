@@ -1,6 +1,26 @@
-.content {
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent);
+  line-height: 1;
+  color: var(--white);
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--light-blue);
+  }
+}
+
+.imgHolder {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .img {
