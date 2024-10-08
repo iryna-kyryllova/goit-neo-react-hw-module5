@@ -79,7 +79,7 @@ const MovieDetailsPage = () => {
                   <span className={styles.runtime}>{calculateRuntime(movie.runtime)}</span>
                 )}
               </div>
-              {movie.vote_average && (
+              {movie.vote_average > 0 && (
                 <div className={styles.rating}>
                   <IoIosStar className={styles.ratingIcon} />
                   <strong className={styles.ratingNumber}>{movie.vote_average}</strong>
@@ -118,17 +118,21 @@ const MovieDetailsPage = () => {
               </ul>
             </div>
           </section>
-          <ul>
-            <li>
-              <NavLink to='/movies/:movieId/cast'>Cast</NavLink>
-            </li>
-            <li>
-              <NavLink to='/movies/:movieId/reviews'>Reviews</NavLink>
-            </li>
-          </ul>
-          <Suspense fallback={<Loader style='section' />}>
-            <Outlet />
-          </Suspense>
+          <section className={styles.tabs}>
+            <ul className={styles.tabsHeader}>
+              <li>
+                <NavLink to={`/movies/${movie.id}/cast`}>Cast</NavLink>
+              </li>
+              <li>
+                <NavLink to={`/movies/${movie.id}/reviews`}>Reviews</NavLink>
+              </li>
+            </ul>
+            <Suspense fallback={<Loader style='section' />}>
+              <div className={styles.tabsContent}>
+                <Outlet />
+              </div>
+            </Suspense>
+          </section>
         </div>
       )}
     </div>

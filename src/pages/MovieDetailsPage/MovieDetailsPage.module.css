@@ -111,3 +111,20 @@
   flex-direction: column;
   gap: 3px;
 }
+
+.tabs {
+  margin-top: 40px;
+}
+
+.tabsHeader {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--accent);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.tabsContent {
+  margin-top: 40px;
+}

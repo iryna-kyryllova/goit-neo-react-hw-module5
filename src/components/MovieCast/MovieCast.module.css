@@ -1,0 +1,35 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 40px 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.info {
+  flex: 1;
+  padding: 15px;
+}
+
+.img {
+  width: 100%;
+  aspect-ratio: 0.6667;
+  object-fit: cover;
+}
+
+.name {
+  margin-bottom: 3px;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.character {
+  font-size: 16px;
+}
