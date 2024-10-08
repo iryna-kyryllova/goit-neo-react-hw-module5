@@ -1,0 +1,46 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.item {
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.name {
+  display: block;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.ratingIcon {
+  color: var(--yellow);
+}
+
+.ratingNumber {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: -4px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.date {
+  font-size: 16px;
+  color: var(--grey);
+}
+
+.content {
+  margin-top: 15px;
+}

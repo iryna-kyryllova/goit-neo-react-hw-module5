@@ -51,7 +51,7 @@ const MovieCast = () => {
           ))}
         </ul>
       ) : (
-        !isLoading && <p>No cast founded.</p>
+        !isLoading && <p>No cast found.</p>
       )}
     </div>
   )
